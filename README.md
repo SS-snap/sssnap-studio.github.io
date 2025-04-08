@@ -18,13 +18,6 @@
 - 作品集展示
 - 联系方式
 
-## 技术栈
-
-- HTML5
-- CSS3 (使用CSS变量和Flexbox/Grid布局)
-- JavaScript (原生JS)
-- Google Fonts字体
-- Unsplash图片素材
 
 ## 网站内容
 
