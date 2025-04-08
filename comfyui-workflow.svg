@@ -1,0 +1,50 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#2d3436" />
+  
+  <!-- 节点1: 文本提示 -->
+  <rect x="50" y="50" width="180" height="100" rx="5" fill="#6c5ce7" />
+  <text x="140" y="80" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Text Prompt</text>
+  <rect x="70" y="100" width="140" height="30" rx="3" fill="#dfe6e9" />
+  <text x="140" y="120" font-family="Arial" font-size="12" fill="#2d3436" text-anchor="middle">mountain landscape</text>
+  
+  <!-- 节点2: 负面提示 -->
+  <rect x="50" y="180" width="180" height="100" rx="5" fill="#6c5ce7" />
+  <text x="140" y="210" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Negative Prompt</text>
+  <rect x="70" y="230" width="140" height="30" rx="3" fill="#dfe6e9" />
+  <text x="140" y="250" font-family="Arial" font-size="12" fill="#2d3436" text-anchor="middle">blur, fog, low quality</text>
+  
+  <!-- 节点3: 模型加载器 -->
+  <rect x="50" y="310" width="180" height="100" rx="5" fill="#00cec9" />
+  <text x="140" y="340" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Model Loader</text>
+  <rect x="70" y="360" width="140" height="30" rx="3" fill="#dfe6e9" />
+  <text x="140" y="380" font-family="Arial" font-size="12" fill="#2d3436" text-anchor="middle">landscape_v1.0</text>
+  
+  <!-- 节点4: KSampler -->
+  <rect x="310" y="180" width="180" height="160" rx="5" fill="#ff7675" />
+  <text x="400" y="210" font-family="Arial" font-size="16" fill="white" text-anchor="middle">KSampler</text>
+  <text x="340" y="240" font-family="Arial" font-size="12" fill="white">Steps: 20</text>
+  <text x="340" y="260" font-family="Arial" font-size="12" fill="white">CFG: 7.5</text>
+  <text x="340" y="280" font-family="Arial" font-size="12" fill="white">Sampler: Euler a</text>
+  <text x="340" y="300" font-family="Arial" font-size="12" fill="white">Seed: 42</text>
+  
+  <!-- 节点5: 图像预览 -->
+  <rect x="570" y="180" width="180" height="160" rx="5" fill="#74b9ff" />
+  <text x="660" y="210" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Image Preview</text>
+  <rect x="590" y="230" width="140" height="90" rx="3" fill="#dfe6e9" />
+  <text x="660" y="275" font-family="Arial" font-size="12" fill="#2d3436" text-anchor="middle">[Image Output]</text>
+  
+  <!-- 连接线 -->
+  <!-- 文本提示 -> KSampler -->
+  <path d="M 230 100 L 270 100 L 270 200 L 310 200" stroke="#dfe6e9" stroke-width="2" fill="none" />
+  <!-- 负面提示 -> KSampler -->
+  <path d="M 230 230 L 270 230 L 270 230 L 310 230" stroke="#dfe6e9" stroke-width="2" fill="none" />
+  <!-- 模型加载器 -> KSampler -->
+  <path d="M 230 360 L 270 360 L 270 260 L 310 260" stroke="#dfe6e9" stroke-width="2" fill="none" />
+  <!-- KSampler -> 图像预览 -->
+  <path d="M 490 260 L 530 260 L 530 260 L 570 260" stroke="#dfe6e9" stroke-width="2" fill="none" />
+  
+  <!-- 标题 -->
+  <text x="400" y="500" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Comfyui 风景生成工作流</text>
+  <text x="400" y="530" font-family="Arial" font-size="16" fill="#dfe6e9" text-anchor="middle">SSsnap Studio专业定制</text>
+</svg> 

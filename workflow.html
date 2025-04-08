@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作流展示 - SSsnap Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .workflow-showcase {
+            padding: 120px 0 80px;
+        }
+        
+        .workflow-item {
+            margin-bottom: 60px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .workflow-header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .workflow-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 30px;
+        }
+        
+        .workflow-diagram {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .workflow-diagram img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .workflow-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .workflow-features {
+            margin-top: 20px;
+        }
+        
+        .workflow-features ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .workflow-features li {
+            margin-bottom: 10px;
+        }
+        
+        .workflow-cta {
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .workflow-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SSsnap Studio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="index.html#services">服务</a></li>
+                    <li><a href="index.html#about">关于我们</a></li>
+                    <li><a href="index.html#portfolio">作品集</a></li>
+                    <li><a href="workflow.html" class="active">工作流展示</a></li>
+                    <li><a href="index.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="workflow-showcase">
+        <div class="container">
+            <h2 class="section-title">工作流展示</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">
+                探索我们精心设计的Comfyui工作流示例，了解我们如何为客户创造价值
+            </p>
+
+            <!-- 工作流1 -->
+            <div class="workflow-item">
+                <div class="workflow-header">
+                    <h3>自然风景生成工作流</h3>
+                </div>
+                <div class="workflow-content">
+                    <div class="workflow-diagram">
+                        <img src="comfyui-workflow.svg" alt="自然风景生成工作流图">
+                    </div>
+                    <div class="workflow-info">
+                        <p>
+                            这是一个专为风景摄影师和创意设计师打造的工作流，能够生成高质量、逼真的自然风景图像。通过精心调整的提示词和参数设置，可以生成各种类型的山脉、海洋、森林等自然场景。
+                        </p>
+                        <div class="workflow-features">
+                            <h4>工作流特点：</h4>
+                            <ul>
+                                <li>使用优化的提示词结构，更容易获得理想结果</li>
+                                <li>内置负面提示词，避免常见生成问题</li>
+                                <li>针对风景图像优化的采样器设置</li>
+                                <li>可扩展设计，支持添加额外的后处理节点</li>
+                                <li>支持批量生成，提高工作效率</li>
+                            </ul>
+                        </div>
+                        <div class="workflow-cta">
+                            <a href="index.html#contact" class="btn btn-primary">咨询定制方案</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作流2 -->
+            <div class="workflow-item">
+                <div class="workflow-header">
+                    <h3>人像风格化工作流</h3>
+                </div>
+                <div class="workflow-content">
+                    <div class="workflow-diagram">
+                        <div style="background: #ddd; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;">
+                            人像风格化工作流示意图
+                        </div>
+                    </div>
+                    <div class="workflow-info">
+                        <p>
+                            这个工作流专为摄影师和肖像艺术家设计，可以将普通人像照片转换为多种艺术风格。无论是时尚杂志风格、水彩画效果、还是电影级调色，这个工作流都能满足您的创意需求。
+                        </p>
+                        <div class="workflow-features">
+                            <h4>工作流特点：</h4>
+                            <ul>
+                                <li>集成ControlNet实现精确的姿势和面部特征控制</li>
+                                <li>内置多种风格预设，一键应用</li>
+                                <li>面部细节增强模块，保证高质量的面部细节</li>
+                                <li>智能背景处理，可替换或模糊背景</li>
+                                <li>支持批量处理多张图像</li>
+                            </ul>
+                        </div>
+                        <div class="workflow-cta">
+                            <a href="index.html#contact" class="btn btn-primary">咨询定制方案</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作流3 -->
+            <div class="workflow-item">
+                <div class="workflow-header">
+                    <h3>产品展示图生成工作流</h3>
+                </div>
+                <div class="workflow-content">
+                    <div class="workflow-diagram">
+                        <div style="background: #ddd; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;">
+                            产品展示图生成工作流示意图
+                        </div>
+                    </div>
+                    <div class="workflow-info">
+                        <p>
+                            为电商卖家和产品营销团队打造的工作流，能够快速生成专业的产品展示图像。只需提供产品基本图片，即可生成各种场景下的产品展示效果，提升产品吸引力和转化率。
+                        </p>
+                        <div class="workflow-features">
+                            <h4>工作流特点：</h4>
+                            <ul>
+                                <li>产品隔离技术，自动提取产品并去除背景</li>
+                                <li>多种场景模板，适合不同类型的产品展示</li>
+                                <li>光影效果优化，使产品呈现最佳状态</li>
+                                <li>品牌元素整合，保持品牌一致性</li>
+                                <li>批量生成功能，一次处理多个产品</li>
+                            </ul>
+                        </div>
+                        <div class="workflow-cta">
+                            <a href="index.html#contact" class="btn btn-primary">咨询定制方案</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SSsnap Studio</h2>
+                    <p>专业的Comfyui工作流开发与定制</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快捷链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="index.html#services">服务</a></li>
+                        <li><a href="index.html#about">关于我们</a></li>
+                        <li><a href="index.html#portfolio">作品集</a></li>
+                        <li><a href="workflow.html">工作流展示</a></li>
+                        <li><a href="index.html#contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">微博</a>
+                        <a href="#" class="social-icon">微信</a>
+                        <a href="#" class="social-icon">知乎</a>
+                        <a href="#" class="social-icon">B站</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SSsnap Studio. 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
